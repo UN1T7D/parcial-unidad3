@@ -64,7 +64,26 @@ class _ParcialUnidad3State extends State<ParcialUnidad3> {
           backgroundColor: Colors.black12,
           appBar: AppBar(
             backgroundColor: Colors.black12,
-            title: Text('Lista de bebidas alcohólicas'),
+            title: Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Bebidas alcohólicas",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        "https://th.bing.com/th/id/OIP.qwt3hK5jPKJZq5iV_b0ERAHaEx?pid=ImgDet&rs=1"),
+                    radius: 20,
+                  )
+                ],
+              ),
+            ),
           ),
           body: futureBuilder),
     );

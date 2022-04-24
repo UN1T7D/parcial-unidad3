@@ -23,7 +23,7 @@ List<Widget> listadoBebidas(data) {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.white,
+                    color: Colors.blue,
                     offset: const Offset(
                       0.0,
                       0.0,
